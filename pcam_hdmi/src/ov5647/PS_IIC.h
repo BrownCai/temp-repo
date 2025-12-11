@@ -8,8 +8,6 @@
 #ifndef I2C_CLIENTAXI_IIC_H_
 #define I2C_CLIENTAXI_IIC_H_
 
-#include "I2C_Client.h"
-
 #include <stdio.h>
 #include <stdint.h>
 #include <string>
@@ -17,6 +15,7 @@
 #include <functional>
 
 #include "xiicps.h"
+#include "../ov5647/I2C_Client.h"
 
 #define STRINGIZE(x) STRINGIZE2(x)
 #define STRINGIZE2(x) #x

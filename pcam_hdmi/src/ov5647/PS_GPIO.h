@@ -10,9 +10,8 @@
 
 #include <stdexcept>
 
-#include "GPIO_Client.h"
-
 #include "xgpiops.h"
+#include "../ov5647/GPIO_Client.h"
 
 namespace digilent {
 

@@ -1,0 +1,30 @@
+2025-12-11T17:06:01.550867100255-17:06:01 **** Incremental Build of configuration Debug for project pcam_hdmi ****
+000-make all 
+000-C:/Xilinx/Vitis/2024.1/gnuwin/bin/make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-C:/Xilinx/Vitis/2024.1/gnuwin/bin/make --no-print-directory main-build
+000-'Building file: ../src/ov5647/OV5647.cpp'
+000-'Invoking: ARM v7 g++ compiler'
+000-arm-none-eabi-g++ -Wall -O0 -g3 -ID:/Zybo-Z7-SW/src/pcam_hdmi/src -c -fmessage-length=0 -MT"src/ov5647/OV5647.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/temp-repo/hw_pcam/export/hw_pcam/sw/hw_pcam/standalone_domain/bspinclude/include -MMD -MP -MF"src/ov5647/OV5647.d" -MT"src/ov5647/OV5647.o" -o "src/ov5647/OV5647.o" "../src/ov5647/OV5647.cpp"
+000-'Finished building: ../src/ov5647/OV5647.cpp'
+000-' '
+000-'Building file: ../src/main.cc'
+000-'Invoking: ARM v7 g++ compiler'
+000-arm-none-eabi-g++ -Wall -O0 -g3 -ID:/Zybo-Z7-SW/src/pcam_hdmi/src -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/temp-repo/hw_pcam/export/hw_pcam/sw/hw_pcam/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+000-'Finished building: ../src/main.cc'
+000-' '
+000-'Building target: pcam_hdmi.elf'
+000-'Invoking: ARM v7 g++ linker'
+000-arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/temp-repo/hw_pcam/export/hw_pcam/sw/hw_pcam/standalone_domain/bsplib/lib -o "pcam_hdmi.elf"  ./src/platform/platform.o  ./src/ov5647/OV5647.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+000-'Finished building target: pcam_hdmi.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size pcam_hdmi.elf  |tee "pcam_hdmi.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000- 642860	   3880	  29152	 675892	  a5034	pcam_hdmi.elf
+000-'Finished building: pcam_hdmi.elf.size'
+000-' '
+00255-
+17:06:03 Build Finished (took 1s.841ms)
+

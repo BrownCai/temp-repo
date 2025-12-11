@@ -3,6 +3,7 @@
 	<name>pcam_hdmi</name>
 	<comment>Created by Vitis v2024.1</comment>
 	<projects>
+		<project>hw_pcam</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
