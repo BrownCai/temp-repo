@@ -58,3 +58,12 @@ platform clean
 platform generate
 platform clean
 platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+bsp reload
+bsp reload
+platform generate -domains 
+bsp reload
+bsp reload

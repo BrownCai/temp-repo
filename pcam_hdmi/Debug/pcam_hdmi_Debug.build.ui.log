@@ -1,4 +1,4 @@
-2025-12-11T19:17:34.490446400255-19:17:34 **** Incremental Build of configuration Debug for project pcam_hdmi ****
+2025-12-11T22:28:52.360831200255-22:28:52 **** Incremental Build of configuration Debug for project pcam_hdmi ****
 000-make all 
 000-C:/Xilinx/Vitis/2024.1/gnuwin/bin/make --no-print-directory pre-build
 000-a9-linaro-pre-build-step
@@ -7,19 +7,26 @@
 000-'Building file: ../src/main.cc'
 000-'Invoking: ARM v7 g++ compiler'
 000-arm-none-eabi-g++ -Wall -O0 -g3 -ID:/Zybo-Z7-SW/src/pcam_hdmi/src -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/temp-repo/hw_pcam/export/hw_pcam/sw/hw_pcam/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+000-../src/main.cc: In function 'int main()':
+000/pcam_hdmi/src/main.cc342-1-1this 'for' clause does not guard... [-Wmisleading-indentation]1-../src/main.cc:342:5: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+000-  342 |     for(volatile int i = 0; i < 10000000; i++);
+000-      |     ^~~
+000/pcam_hdmi/src/main.cc345-1-1...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'0-../src/main.cc:345:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+000-  345 |         uint16_t src_width = timing[static_cast<int>(current_res)].h_active;
+000-      |         ^~~~~~~~
 000-'Finished building: ../src/main.cc'
 000-' '
 000-'Building target: pcam_hdmi.elf'
 000-'Invoking: ARM v7 g++ linker'
-000-arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/temp-repo/hw_pcam/export/hw_pcam/sw/hw_pcam/standalone_domain/bsplib/lib -o "pcam_hdmi.elf"  ./src/platform/platform.o  ./src/ov5647/OV5647.o  ./src/network/udp_stream.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+000-arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/temp-repo/hw_pcam/export/hw_pcam/sw/hw_pcam/standalone_domain/bsplib/lib -o "pcam_hdmi.elf"  ./src/platform/platform.o  ./src/ov5647/OV5647.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
 000-'Finished building target: pcam_hdmi.elf'
 000-' '
 000-'Invoking: ARM v7 Print Size'
 000-arm-none-eabi-size pcam_hdmi.elf  |tee "pcam_hdmi.elf.size"
 000-   text	   data	    bss	    dec	    hex	filename
-000- 686574	   3892	2296808	2987274	 2d950a	pcam_hdmi.elf
+000- 707021	   3948	5296752	6007721	 5baba9	pcam_hdmi.elf
 000-'Finished building: pcam_hdmi.elf.size'
 000-' '
 00255-
-19:17:35 Build Finished (took 1s.465ms)
+22:28:53 Build Finished (took 1s.534ms)
 
