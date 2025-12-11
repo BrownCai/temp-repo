@@ -11,3 +11,9 @@ bsp config phy_link_speed "CONFIG_LINKSPEED1000"
 bsp write
 bsp reload
 catch {bsp regenerate}
+bsp config pbuf_pool_size "2048"
+bsp write
+bsp reload
+catch {bsp regenerate}
+platform clean
+platform generate

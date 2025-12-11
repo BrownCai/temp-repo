@@ -219,3 +219,6 @@ con
 ----------------End of Script----------------
 
 17:06:47 INFO  : Launch script is exported to file 'D:\temp-repo\pcam_hdmi_system\_ide\scripts\debugger_pcam_hdmi-default.tcl'
+17:16:12 INFO  : Result from executing command 'removePlatformRepo': 
+17:16:39 INFO  : Result from executing command 'getProjects': hw_pcam
+17:16:39 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
