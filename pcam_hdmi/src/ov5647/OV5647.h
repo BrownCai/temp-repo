@@ -203,15 +203,15 @@ namespace OV5647_cfg {
 	};
 	config_word_t const cfg_1080p_30fps_[] =
 	{//1920 x 1080 @ 30fps, RAW10, MIPISCLK=420, SCLK=84MHz, PCLK=84M
-			// TO DO: register configurations
+			// TODO: register configurations
 	};
 	config_word_t const cfg_1080p_30fps_336M_mipi_[] =
 	{//1920 x 1080 @ 30fps, RAW10, MIPISCLK=672, SCLK=67.2MHz, PCLK=134.4M
-			// TO DO: register configurations
+			// TODO: register configurations
 	};
 	config_word_t const cfg_1080p_30fps_336M_1lane_mipi_[] =
 	{//1920 x 1080 @ 30fps, RAW10, MIPISCLK=672, SCLK=67.2MHz, PCLK=134.4M
-			// TO DO: register configurations
+			// TODO: register configurations
 	};
 	config_word_t const cfg_init_[] =
 	{

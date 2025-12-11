@@ -10,6 +10,7 @@ RM := rm -rf
 -include sources.mk
 -include src/platform/subdir.mk
 -include src/ov5647/subdir.mk
+-include src/network/subdir.mk
 -include src/subdir.mk
 -include subdir.mk
 -include objects.mk

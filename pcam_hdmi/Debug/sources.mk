@@ -25,6 +25,7 @@ ELFSIZE :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 src \
+src/network \
 src/ov5647 \
 src/platform \
 

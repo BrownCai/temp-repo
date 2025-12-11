@@ -222,3 +222,136 @@ con
 17:16:12 INFO  : Result from executing command 'removePlatformRepo': 
 17:16:39 INFO  : Result from executing command 'getProjects': hw_pcam
 17:16:39 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+18:16:23 INFO  : No changes in MSS file content so sources will not be generated.
+18:18:43 INFO  : No changes in MSS file content so sources will not be generated.
+18:20:51 INFO  : Result from executing command 'removePlatformRepo': 
+18:24:07 INFO  : No changes in MSS file content so sources will not be generated.
+18:29:42 INFO  : Result from executing command 'getProjects': hw_pcam
+18:29:42 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+18:33:30 INFO  : Result from executing command 'removePlatformRepo': 
+18:33:58 INFO  : Result from executing command 'getProjects': hw_pcam
+18:33:58 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+18:33:58 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+18:33:58 INFO  : Updating application flags with new BSP settings...
+18:33:59 INFO  : Successfully updated application flags for project pcam_hdmi.
+18:34:51 INFO  : Disconnected from the channel tcfchan#9.
+18:34:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:34:52 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B180A' is selected.
+18:34:52 ERROR : port closed
+18:34:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+18:34:52 ERROR : port closed
+18:35:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:35:06 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B180A' is selected.
+18:35:06 INFO  : 'jtag frequency' command is executed.
+18:35:06 INFO  : Context for 'APU' is selected.
+18:35:06 INFO  : System reset is completed.
+18:35:09 INFO  : 'after 3000' command is executed.
+18:35:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B180A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6B180A-13722093-0"}' command is executed.
+18:35:11 INFO  : Device configured successfully with "D:/temp-repo/pcam_hdmi/_ide/bitstream/system_wrapper.bit"
+18:35:11 INFO  : Context for 'APU' is selected.
+18:35:11 INFO  : Hardware design and registers information is loaded from 'D:/temp-repo/hw_pcam/export/hw_pcam/hw/system_wrapper.xsa'.
+18:35:11 INFO  : 'configparams force-mem-access 1' command is executed.
+18:35:11 INFO  : Context for 'APU' is selected.
+18:35:11 INFO  : Sourcing of 'D:/temp-repo/pcam_hdmi/_ide/psinit/ps7_init.tcl' is done.
+18:35:11 INFO  : 'ps7_init' command is executed.
+18:35:11 INFO  : 'ps7_post_config' command is executed.
+18:35:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:35:12 INFO  : The application 'D:/temp-repo/pcam_hdmi/Debug/pcam_hdmi.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:35:12 INFO  : 'configparams force-mem-access 0' command is executed.
+18:35:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B180A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6B180A-13722093-0"}
+fpga -file D:/temp-repo/pcam_hdmi/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/temp-repo/hw_pcam/export/hw_pcam/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/temp-repo/pcam_hdmi/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/temp-repo/pcam_hdmi/Debug/pcam_hdmi.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:35:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:35:13 INFO  : 'con' command is executed.
+18:35:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:35:13 INFO  : Launch script is exported to file 'D:\temp-repo\pcam_hdmi_system\_ide\scripts\debugger_pcam_hdmi-default.tcl'
+18:59:35 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+19:01:18 INFO  : Result from executing command 'removePlatformRepo': 
+19:01:44 INFO  : Result from executing command 'getProjects': hw_pcam
+19:01:44 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+19:01:44 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+19:02:27 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+19:05:03 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+19:05:55 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+19:06:32 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+19:07:54 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+19:08:28 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+19:08:44 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+19:17:34 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+19:17:50 INFO  : Disconnected from the channel tcfchan#20.
+19:17:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:17:51 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B180A' is selected.
+19:17:51 ERROR : port closed
+19:17:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+19:17:51 ERROR : port closed
+19:18:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:18:04 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B180A' is selected.
+19:18:04 INFO  : 'jtag frequency' command is executed.
+19:18:04 INFO  : Context for 'APU' is selected.
+19:18:04 INFO  : System reset is completed.
+19:18:07 INFO  : 'after 3000' command is executed.
+19:18:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B180A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6B180A-13722093-0"}' command is executed.
+19:18:09 INFO  : Device configured successfully with "D:/temp-repo/pcam_hdmi/_ide/bitstream/system_wrapper.bit"
+19:18:09 INFO  : Context for 'APU' is selected.
+19:18:09 INFO  : Hardware design and registers information is loaded from 'D:/temp-repo/hw_pcam/export/hw_pcam/hw/system_wrapper.xsa'.
+19:18:09 INFO  : 'configparams force-mem-access 1' command is executed.
+19:18:09 INFO  : Context for 'APU' is selected.
+19:18:09 INFO  : Sourcing of 'D:/temp-repo/pcam_hdmi/_ide/psinit/ps7_init.tcl' is done.
+19:18:09 INFO  : 'ps7_init' command is executed.
+19:18:09 INFO  : 'ps7_post_config' command is executed.
+19:18:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:18:11 INFO  : The application 'D:/temp-repo/pcam_hdmi/Debug/pcam_hdmi.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:18:11 INFO  : 'configparams force-mem-access 0' command is executed.
+19:18:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B180A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6B180A-13722093-0"}
+fpga -file D:/temp-repo/pcam_hdmi/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/temp-repo/hw_pcam/export/hw_pcam/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/temp-repo/pcam_hdmi/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/temp-repo/pcam_hdmi/Debug/pcam_hdmi.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:18:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:18:11 INFO  : 'con' command is executed.
+19:18:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:18:11 INFO  : Launch script is exported to file 'D:\temp-repo\pcam_hdmi_system\_ide\scripts\debugger_pcam_hdmi-default.tcl'
