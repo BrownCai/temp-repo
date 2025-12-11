@@ -1,42 +1,17 @@
 Nothing to build in platform 'hw_pcam'
 
-14:44:22 **** Incremental Build of configuration Debug for project pcam_hdmi ****
+01:30:59 **** Incremental Build of configuration Debug for project pcam_hdmi ****
 make all 
 C:/Xilinx/Vitis/2024.1/gnuwin/bin/make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 C:/Xilinx/Vitis/2024.1/gnuwin/bin/make --no-print-directory main-build
-'Building file: ../src/ov5640/OV5640.cpp'
-'Invoking: ARM v7 g++ compiler'
-arm-none-eabi-g++ -Wall -O0 -g3 -ID:/Zybo-Z7-SW/src/pcam_hdmi/src -c -fmessage-length=0 -MT"src/ov5640/OV5640.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/EmbeddedProjects/Xilinx/zybo-z7_pcam_5c/vitis/hw_pcam/export/hw_pcam/sw/hw_pcam/standalone_domain/bspinclude/include -MMD -MP -MF"src/ov5640/OV5640.d" -MT"src/ov5640/OV5640.o" -o "src/ov5640/OV5640.o" "../src/ov5640/OV5640.cpp"
-'Finished building: ../src/ov5640/OV5640.cpp'
-' '
 'Building file: ../src/main.cc'
 'Invoking: ARM v7 g++ compiler'
 arm-none-eabi-g++ -Wall -O0 -g3 -ID:/Zybo-Z7-SW/src/pcam_hdmi/src -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/EmbeddedProjects/Xilinx/zybo-z7_pcam_5c/vitis/hw_pcam/export/hw_pcam/sw/hw_pcam/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
-'Finished building: ../src/main.cc'
-' '
-'Building target: pcam_hdmi.elf'
-'Invoking: ARM v7 g++ linker'
-arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/EmbeddedProjects/Xilinx/zybo-z7_pcam_5c/vitis/hw_pcam/export/hw_pcam/sw/hw_pcam/standalone_domain/bsplib/lib -o "pcam_hdmi.elf"  ./src/platform/platform.o  ./src/ov5640/OV5640.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-'Finished building target: pcam_hdmi.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size pcam_hdmi.elf  |tee "pcam_hdmi.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 648304	   3880	  29152	 681336	  a6578	pcam_hdmi.elf
-'Finished building: pcam_hdmi.elf.size'
-' '
-14:44:25 **** Incremental Build of configuration Debug for project pcam_hdmi_system ****
-make all 
-Generating bif file for the system project
-generate_system_bif.bat 11386 D:/EmbeddedProjects/Xilinx/zybo-z7_pcam_5c/vitis/hw_pcam/export/hw_pcam/hw_pcam.xpfm standalone_domain D:/EmbeddedProjects/Xilinx/zybo-z7_pcam_5c/vitis/pcam_hdmi_system/Debug/system.bif
-'\gnu\microblaze\lin\bin\' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-'\gnu\microblaze\nt\bin\' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-'\gnuwin\bin\' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-sdcard_gen --xpfm D:/EmbeddedProjects/Xilinx/zybo-z7_pcam_5c/vitis/hw_pcam/export/hw_pcam/hw_pcam.xpfm --sys_config hw_pcam --bif D:/EmbeddedProjects/Xilinx/zybo-z7_pcam_5c/vitis/pcam_hdmi_system/Debug/system.bif --bitstream D:/EmbeddedProjects/Xilinx/zybo-z7_pcam_5c/vitis/pcam_hdmi/_ide/bitstream/system_wrapper.bit --elf D:/EmbeddedProjects/Xilinx/zybo-z7_pcam_5c/vitis/pcam_hdmi/Debug/pcam_hdmi.elf,ps7_cortexa9_0
-creating BOOT.BIN using D:/EmbeddedProjects/Xilinx/zybo-z7_pcam_5c/vitis/pcam_hdmi/_ide/bitstream/system_wrapper.bit
-Running C:/Xilinx/Vitis/2024.1/bin/bootgen  -image D:/EmbeddedProjects/Xilinx/zybo-z7_pcam_5c/vitis/pcam_hdmi_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+../src/main.cc:22:10: fatal error: xvprocss.h: No such file or directory
+   22 | #include "xvprocss.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [src/subdir.mk:23: src/main.o] Error 1
+make: *** [makefile:48: all] Error 2
