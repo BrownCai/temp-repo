@@ -2614,3 +2614,72 @@ con
 23:43:33 INFO  : Registering command handlers for Vitis TCF services
 23:43:33 INFO  : Platform repository initialization has completed.
 23:43:33 INFO  : Successfully done query RDI_DATADIR 
+00:08:57 DEBUG : Logs will be stored at 'D:/temp-repo/IDE.log'.
+00:08:57 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\temp-repo\temp_xsdb_launch_script.tcl
+00:08:57 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+00:08:57 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+00:08:57 ERROR : (XSDB Server)'\gnuwin\bin\' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+00:08:59 INFO  : XSCT server has started successfully.
+00:08:59 INFO  : Successfully done setting XSCT server connection channel  
+00:08:59 INFO  : plnx-install-location is set to ''
+00:08:59 INFO  : Successfully done setting workspace for the tool. 
+00:09:00 INFO  : Successfully done query RDI_DATADIR 
+00:09:00 INFO  : Registering command handlers for Vitis TCF services
+00:09:00 INFO  : Platform repository initialization has completed.
+00:23:33 INFO  : Hardware specification for platform project 'hw_pcam' is updated.
+00:26:15 INFO  : Result from executing command 'removePlatformRepo': 
+00:26:45 INFO  : Result from executing command 'getProjects': hw_pcam
+00:26:45 INFO  : Result from executing command 'getPlatforms': hw_pcam|D:/EmbeddedProjects/Xilinx/zybo-z7_pcam_5c/vitis/hw_pcam/export/hw_pcam/hw_pcam.xpfm;xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+00:27:27 INFO  : Result from executing command 'removePlatformRepo': 
+00:47:20 INFO  : Result from executing command 'getProjects': hw_pcam
+00:47:20 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+00:47:21 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+00:54:47 INFO  : Hardware specification for platform project 'hw_pcam' is updated.
+00:55:36 INFO  : No changes in MSS file content so sources will not be generated.
+00:57:52 INFO  : Result from executing command 'getProjects': hw_pcam
+00:57:52 INFO  : Result from executing command 'getPlatforms': hw_pcam|D:/EmbeddedProjects/Xilinx/zybo-z7_pcam_5c/vitis/hw_pcam/export/hw_pcam/hw_pcam.xpfm;hw_pcam|D:/temp-repo/hw_pcam/export/hw_pcam/hw_pcam.xpfm;xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+00:57:53 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+01:16:43 INFO  : Hardware specification for platform project 'hw_pcam' is updated.
+01:16:54 INFO  : Result from executing command 'removePlatformRepo': 
+01:17:15 INFO  : No changes in MSS file content so sources will not be generated.
+01:21:23 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\temp-repo\temp_xsdb_launch_script.tcl
+01:21:23 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+01:21:23 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+01:21:23 ERROR : (XSDB Server)'\gnuwin\bin\' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+01:21:25 INFO  : XSCT server has started successfully.
+01:22:30 INFO  : Hardware specification for platform project 'hw_pcam' is updated.
+01:23:53 INFO  : No changes in MSS file content so sources will not be generated.
+01:25:30 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+01:25:44 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+01:28:37 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+01:30:52 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+01:30:59 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+01:49:30 INFO  : The hardware specification used by project 'pcam_hdmi' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+01:49:31 INFO  : The file 'D:\temp-repo\pcam_hdmi\_ide\bitstream\system_wrapper.bit' stored in project is removed.
+01:49:31 INFO  : The updated bitstream files are copied from platform to folder 'D:\temp-repo\pcam_hdmi\_ide\bitstream' in project 'pcam_hdmi'.
+01:49:31 INFO  : The file 'D:\temp-repo\pcam_hdmi\_ide\psinit\ps7_init.tcl' stored in project is removed.
+01:49:34 INFO  : The updated ps init files are copied from platform to folder 'D:\temp-repo\pcam_hdmi\_ide\psinit' in project 'pcam_hdmi'.
+01:51:43 INFO  : No changes in MSS file content so sources will not be generated.
+01:52:32 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+01:52:32 INFO  : Updating application flags with new BSP settings...
+01:52:33 INFO  : Successfully updated application flags for project pcam_hdmi.
+01:53:55 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+01:57:00 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+01:57:00 ERROR : Failed to get platform details for the project 'pcam_hdmi'. Cannot sync application flags.
+02:08:34 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+02:08:34 INFO  : Updating application flags with new BSP settings...
+02:08:34 INFO  : Successfully updated application flags for project pcam_hdmi.
+02:08:56 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...
+02:09:06 INFO  : Checking for BSP changes to sync application flags for project 'pcam_hdmi'...

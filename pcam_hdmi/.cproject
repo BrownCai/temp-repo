@@ -57,6 +57,8 @@
                                     								
                                 </option>
                                 								
+                                <option id="xilinx.gnu.compiler.inferred.swplatform.flags.897432558" superClass="xilinx.gnu.compiler.inferred.swplatform.flags" value=" " valueType="string"/>
+                                								
                                 <inputType id="xilinx.gnu.armv7.c.compiler.input.678175225" name="C source files" superClass="xilinx.gnu.armv7.c.compiler.input"/>
                                 							
                             </tool>
@@ -81,6 +83,8 @@
                                     								
                                 </option>
                                 								
+                                <option id="xilinx.gnu.compiler.inferred.swplatform.flags.10638009" superClass="xilinx.gnu.compiler.inferred.swplatform.flags" value=" " valueType="string"/>
+                                								
                                 <inputType id="xilinx.gnu.armv7.cxx.compiler.input.734226579" name="C++ source files" superClass="xilinx.gnu.armv7.cxx.compiler.input"/>
                                 							
                             </tool>
@@ -98,6 +102,8 @@
                                 <option id="xilinx.gnu.linker.inferred.swplatform.flags.148140059" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
                                     									
                                     <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group"/>
                                     								
                                 </option>
                                 								
@@ -126,6 +132,8 @@
                                 <option id="xilinx.gnu.linker.inferred.swplatform.flags.486043288" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" useByScannerDiscovery="false" valueType="libs">
                                     									
                                     <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group"/>
                                     								
                                 </option>
                                 								
@@ -219,6 +227,8 @@
                                     								
                                 </option>
                                 								
+                                <option id="xilinx.gnu.compiler.inferred.swplatform.flags.2076724540" superClass="xilinx.gnu.compiler.inferred.swplatform.flags" value=" " valueType="string"/>
+                                								
                                 <inputType id="xilinx.gnu.armv7.c.compiler.input.349608183" name="C source files" superClass="xilinx.gnu.armv7.c.compiler.input"/>
                                 							
                             </tool>
@@ -243,6 +253,8 @@
                                     								
                                 </option>
                                 								
+                                <option id="xilinx.gnu.compiler.inferred.swplatform.flags.1374345288" superClass="xilinx.gnu.compiler.inferred.swplatform.flags" value=" " valueType="string"/>
+                                								
                                 <inputType id="xilinx.gnu.armv7.cxx.compiler.input.866448749" name="C++ source files" superClass="xilinx.gnu.armv7.cxx.compiler.input"/>
                                 							
                             </tool>
@@ -260,6 +272,8 @@
                                 <option id="xilinx.gnu.linker.inferred.swplatform.flags.1845965043" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
                                     									
                                     <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group"/>
                                     								
                                 </option>
                                 								
@@ -288,6 +302,8 @@
                                 <option id="xilinx.gnu.linker.inferred.swplatform.flags.513561662" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
                                     									
                                     <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group"/>
                                     								
                                 </option>
                                 								

@@ -11,17 +11,17 @@
 #include "MIPI_CSI_2_RX.h"
 
 // *** NETWORK INCLUDES ***
-//extern "C" {
-//#include "lwip/err.h"
-//#include "lwip/udp.h"
-//#include "lwip/init.h"
-//#include "netif/xadapter.h"
-//#include "lwipopts.h"
-//#include "xil_cache.h"
-//#include "xil_printf.h"
+extern "C" {
+#include "lwip/err.h"
+#include "lwip/udp.h"
+#include "lwip/init.h"
+#include "netif/xadapter.h"
+#include "lwipopts.h"
+#include "xil_cache.h"
+#include "xil_printf.h"
 #include "xvprocss.h"
 #include "xvidc.h"
-//}
+}
 
 
 #define IRPT_CTL_DEVID 		XPAR_PS7_SCUGIC_0_DEVICE_ID
